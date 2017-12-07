@@ -35,7 +35,7 @@ while(loop)
         
         sum = 0;
         for(i = 1:length(p))
-            if(p(i) > 5.8)
+            if(p(i) > avg(p)-std(p))
                 sum = sum+1;
             end
         end
